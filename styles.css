@@ -238,3 +238,90 @@ footer p {
 footer p:hover {
     color: #ddd;
 }
+
+
+/* Pantalla pequeña (menos de 480px) */
+@media only screen and (max-width: 480px) {
+    /* Aquí van las reglas para pantallas pequeñas */
+    header {
+      padding: 10px 0;
+    }
+    .header-content {
+      flex-direction: column;
+    }
+    .header-content img.profile-pic {
+      width: 50px;
+      height: 50px;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    .tab-content {
+      padding: 10px;
+    }
+    /* ... */
+  }
+  
+  /* Pantalla mediana (entre 480px y 768px) */
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    /* Aquí van las reglas para pantallas medianas */
+    header {
+      padding: 15px 0;
+    }
+    .header-content {
+      flex-direction: row;
+    }
+    .header-content img.profile-pic {
+      width: 75px;
+      height: 75px;
+    }
+    nav ul {
+      flex-direction: row;
+    }
+    nav ul li {
+      margin: 15px 0;
+    }
+    main {
+      padding: 15px;
+    }
+    .tab-content {
+      padding: 15px;
+    }
+    /* ... */
+  }
+  
+  /* Pantalla grande (más de 768px) */
+  @media only screen and (min-width: 768px) {
+    /* Aquí van las reglas para pantallas grandes */
+    header {
+      padding: 20px 0;
+    }
+    .header-content {
+      flex-direction: row;
+    }
+    .header-content img.profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+    nav ul {
+      flex-direction: row;
+    }
+    nav ul li {
+      margin: 20px 0;
+    }
+    main {
+      padding: 20px;
+    }
+    .tab-content {
+      padding: 20px;
+    }
+    /* ... */
+  }
+
+  
